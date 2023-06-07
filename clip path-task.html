@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clip path task</title>
+</head>
+<body>
+    <style>
+		
+		.a{
+			height: 45px;
+			width: 60px;
+			margin: 15px;
+			background:orangered;
+            margin-left: 30px;
+
+		    clip-path:polygon(20% 0%,80% 0%,100% 50%,80% 100%,20% 100%,0% 50%);
+		}
+		.b
+	    {
+            height: 55px;
+			width: 60px;
+			background:yellow;
+			margin: 15px;	
+		   clip-path:polygon(50% 0%,100% 50%,80% 100%,20% 100%,0% 50%);
+           margin-left: 30px;
+	    	
+	    }
+	    .c
+	    {
+            height: 50px;
+			width: 60px;
+			background:blue;
+			margin: 10px;
+			clip-path: polygon(50% 0%,100% 100%,0% 100%);
+            margin-left: 30px;
+
+	    }
+	</style>
+</head>
+<body>
+	<div class="a"></div>
+	<div class="b"></div>
+	<div class="c"></div>
+</body>
+</html>
