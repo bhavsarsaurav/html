@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{margin: 0;padding: 0;}
+        .a
+        {
+            height: auto;
+            width: auto;
+        }   
+        .b
+        {
+             height: 70px;  
+             line-height: 70px;
+             overflow: hidden;
+             position: fixed;
+        }
+        table
+        {
+            margin: auto;        
+        }
+        td{
+            padding: 0px 30px 0px 30px;
+        }
+        .d{
+            background: black;
+            color: aliceblue;
+            /* height: 20px;width: 30px; */
+            position: relative;
+            /* transition: 0.5s; */
+        }
+        .c{
+            height:15px;
+            width:0px;
+            background: aqua;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: 1s;
+        }
+        .d:hover .c
+        {
+            width:100%;
+        
+        }
+        button{
+            height:80px;
+            width: 190px;
+            background: aqua;
+            transform: translate(-30px,-5px);
+            /* margin: 0px 0px 0px 0px; */
+        }
+        .fa{
+            color: rgb(225, 165, 165);
+            padding: 30px,25px;
+            font-size: 25px;
+            background: rgb(145, 140, 140);
+           }
+
+    </style>
+</head>
+<body>
+   <div class="b">
+    <form action="">
+   <table>
+    <tr class="a">
+        <td class="d"> <div class="c"></div>Home</td>
+        <td class="d"> <div class="c"></div>About</td>
+        <td class="d"> <div class="c"></div>Men's Wear</td>
+        <td class="d"> <div class="c"></div>Women's Wear</td>
+        <td class="d"> <div class="c"></div>Short Codes</td>
+        <td class="d"> <div class="c"></div>Contact</td>
+        <td><button><a href="" style="background: black; height: 40px; width: 10px;" ><i class="fa fa-shopping-cart" aria-hidden="true"></i></button></a></td>
+    </tr>
+    
+    </table>
+</form>
+
+    </div>
+
+</body>
+</html>
