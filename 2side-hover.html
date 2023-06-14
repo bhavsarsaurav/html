@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Side Hover Effect</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{box-sizing: border-box;}
+        .p
+        {   height: 300px;width: 600px;
+            background:url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bot_2.jpg);
+            position: relative; 
+            font-size: x-large;
+            word-spacing: 20px;
+            letter-spacing: 10px;
+            text-align: center;
+            line-height: 300px;
+            text-transform: uppercase;
+            overflow: hidden;     
+        }
+        .p span{color: aqua;}
+        .p::after
+        {   content: "";
+            height: 300px;width: 600px;
+            background: rgba(104, 100, 100, 0.3);
+            position: absolute;
+            transition: .5s;
+            bottom: -100%;
+            left: -100%;
+        }
+        .p::before
+        {   content: "";
+            height: 300px;width: 600px;
+            background: rgba(104, 100, 100, 0.3);
+            transition: .5s;
+            position: absolute;
+            top: -100%;
+            right: -100%; 
+        }
+         .p:hover::after
+        {
+            bottom: 0%;
+            left:0%;
+         }
+          .p:hover::before 
+         {
+            top: 0%;
+            right:0%;
+         }
+        </style>
+    </head>
+     <body>
+        </div>
+        <p class="p"> flat <span>50%</span>  off</p> 
+</body>
+</html>
